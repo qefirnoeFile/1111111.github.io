@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  
+}
+div {
+  border: 1px solid black;
+}
+p {
+	margin:0px;
+	text-indent: 25px;
+	word-break: break-all
+}
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	position: sticky;
+	top:0px;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 60px;
+  margin-right:50px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar input[type=text] {
+  float:right;
+  padding: 6px;
+  margin: 8px;
+  border: none;
+  font-size: 17px;
+}
+ 
+.navbar input[type=text] {
+    border: 1px solid #ccc;  
+  }
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  min-height:1000px;
+}
+.main_card
+{
+	margin-bottom:50px;
+}
+.side_card
+{
+	height:150px;
+	padding:10px;
+	margin-bottom:50px;
+	display:flex;
+	overflow:hidden;
+}
+.main_img
+{
+	background-repeat: no-repeat;
+	background-size: cover;
+	aspect-ratio: auto 600 / 250;
+}
+.side_text
+{
+	width:49%;
+	font-size:90%;	
+	margin:0px 15px 0px 0px;
+}
+.main_card_h
+{
+	border-top:1px solid black;
+	margin: 0;
+	padding:5px;
+	text-align:center;
+}
+.main_text {
+	min-height:1000px;
+	letter-spacing: 1px;
+	line-height: 1.3
+}
+.dropbtn {
+  background-color: green;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width:100%;
+}
+.dropdown {
+  display: inline-block;
+  height:50px;
+  transition: height 1s;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown-content {
+  position: relative;
+  background-color: yellow;
+  padding:10px;
+  margin:0px;
+}
+
+.dropdown:hover  {
+  height:150px
+}
+.main1 {
+  background-color: yellow;
+  padding: 0 10% 0 10%;
+}
+.main2 {
+	flex: 80%;
+	background-color: white;
+	padding: 20px;
+	min-height:2000px;
+}
+.side2 {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 10px;
+	max-width:300px;
+}
+.side3 {
+  background-color: #f1f1f1;
+  position:sticky;
+  top:7%;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 50%;
+  height:100%;
+  border-radius:15px;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
